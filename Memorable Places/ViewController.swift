@@ -65,6 +65,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         myMap.setRegion(region, animated: true)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "back" {
+            self.navigationController?.navigationBarHidden = false
+        }
+    }
 
 }
 

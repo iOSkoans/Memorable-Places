@@ -27,7 +27,7 @@
                                     <navigationItem title="My Map" id="3KW-Hc-Ue9">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="K8h-r2-8Hq">
                                             <connections>
-                                                <segue destination="uU6-3G-hmi" kind="show" id="hkP-ZM-KcV"/>
+                                                <segue destination="uU6-3G-hmi" kind="show" identifier="back" id="hkP-ZM-KcV"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Find Me" id="r7O-YL-5eH">
@@ -87,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHz-Or-CIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650" y="253"/>
+            <point key="canvasLocation" x="621" y="-259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kJj-mN-GUx">

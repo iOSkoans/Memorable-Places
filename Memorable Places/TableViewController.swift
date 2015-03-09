@@ -33,10 +33,13 @@ class TableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("trigger findPlace")
         activePlace = indexPath.row
-        self.navigationController?.navigationBarHidden = true
         self.performSegueWithIdentifier("findPlace", sender: indexPath)
     }
 
